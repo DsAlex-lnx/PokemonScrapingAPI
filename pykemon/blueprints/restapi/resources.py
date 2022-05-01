@@ -1,4 +1,3 @@
-from urllib import response
 from flask import abort, Response
 import json
 from flask_restful import Resource
