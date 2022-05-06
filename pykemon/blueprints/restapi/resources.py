@@ -12,7 +12,7 @@ class PokemonResource(Resource):
         }), mimetype='application/json')
             
 class CatchingPokemonResource(Resource):
-    def get(seld, pokedex_id):
+    def get(self, pokedex_id):
         pokemon = collector.catching_by_id(pokedex_id) or abort(404)
         return Response(json.dumps({
             'pokemon' : pokemon
